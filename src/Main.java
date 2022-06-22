@@ -29,8 +29,6 @@ public class Main {
         System.out.println();
         // <<<<< Dz Search and remove *****************************************
 
-
-
         var linkedListString = new LinkedList<String>() {{
             add("Hello");
             add("I");

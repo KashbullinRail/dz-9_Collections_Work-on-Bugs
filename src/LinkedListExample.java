@@ -1,5 +1,4 @@
 
-//
 //    public void add(int index, E element) {          передаем значение полей в метод
 //        checkPositionIndex(index);                    проверяем переданный индекс на границы от нуля до size
 //

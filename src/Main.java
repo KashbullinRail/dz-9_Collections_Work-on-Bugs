@@ -3,6 +3,46 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println();
+
+//        Example ArrayList **********
+        ExampleArrayList exampleArrayList = new ExampleArrayList();
+        exampleArrayList.add("Hello");
+        exampleArrayList.add(",");
+        exampleArrayList.add("I");
+        exampleArrayList.add("am");
+        exampleArrayList.add(",");
+        exampleArrayList.add("Array");
+        exampleArrayList.add("List");
+        exampleArrayList.printArrayList();
+        exampleArrayList.add("Example", 4);
+        exampleArrayList.printArrayList();
+        exampleArrayList.searchAndRemove(",");
+        exampleArrayList.printArrayList();
+        exampleArrayList.searchAndRemove("am");
+        exampleArrayList.printArrayList();
+        System.out.println();
+//        Example LinkedList *********
+        ExampleLinkedList exampleLinkedList = new ExampleLinkedList();
+        exampleLinkedList.add("Hello");
+        exampleLinkedList.add(",");
+        exampleLinkedList.add("I");
+        exampleLinkedList.add("am");
+        exampleLinkedList.printLinkedList();
+        exampleLinkedList.add("Example");
+        exampleLinkedList.add("Linked");
+        exampleLinkedList.add("Copy");
+        exampleLinkedList.add("List");
+        exampleLinkedList.printLinkedList();
+        exampleLinkedList.searchAndRemove("Example");
+        exampleLinkedList.printLinkedList();
+        exampleLinkedList.searchAndRemove("Copy");
+        exampleLinkedList.printLinkedList();
+        System.out.println();
+
+
+
+
         var arrayListString = new ArrayList<String>() {{
             add("Hello");
             add("I");
@@ -11,6 +51,7 @@ public class Main {
             add(1, ",");
             add(4, "not");
         }};
+        System.out.println("***********************");
         for (String str : arrayListString) {
             System.out.print(str + " ");
         }
